@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Yudhveer Saini Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v5.15.4/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
@@ -12,13 +14,26 @@
     <link rel="stylesheet" href="css/style.css">
 
 
-  </head>
-  <body>
-    
-      <header>
-        <nav id="navbar-example2" class="navbar px-3">
-            <div class="container">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar mobile-nav d-md-none px-1 px-md-3">
+            <div class="container-lg">
                 <a class="navbar-brand" href="#banner-sec">
+                    <img src="images/ys-logo.png" class="logo-w normal-h">
+                    <img src="images/ys-logo-w.png" class="logo-w fixed-h">
+                </a>
+                <div class="d-flex">
+                    <a class="btn btn-purple" href="images/Yudhveer Saini Resume.pdf" target="_blank">Resume
+                        <i class="fas fa-download"></i></a>
+                </div>
+            </div>
+        </nav>
+        <nav id="navbar-example2" class="navbar desktop-nav px-1 px-md-3">
+            <div class="container-lg px-0 px-md-2">
+                <a class="navbar-brand d-none d-md-block" href="#banner-sec">
                     <img src="images/ys-logo.png" class="logo-w normal-h">
                     <img src="images/ys-logo-w.png" class="logo-w fixed-h">
                 </a>
@@ -39,8 +54,8 @@
                         <a class="nav-link" href="#Contact">Contact</a>
                     </li>
                 </ul>
-                <div class="d-flex">
-                    <a class="btn btn-purple" href="images/Yudhveer Saini Resume.pdf" target="_blank">Resume
+                <div class="d-flex d-none d-md-block">
+                    <a class="btn btn-purple " href="images/Yudhveer Saini Resume.pdf" target="_blank">Resume
                         <i class="fas fa-download"></i></a>
                 </div>
             </div>
@@ -49,15 +64,15 @@
     <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -20%"
         data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
         <section id="banner-sec" class="bg-banner">
-            <div class="container py-5">
+            <div class="container py-1 py-md-5">
                 <div class="row">
-                    <div class="col-6 align-self-center ps-lg-5">
+                    <div class="col-md-6 align-self-center ps-lg-5 order-1 order-md-0">
                         <h1 class="display-5 fw-bold text-purple">
                             <span>Hey,
                                 <img src="images/wave.gif" alt="hand img" width="20px">
                             </span>
                             <br> I am <span class="typed"></span>
-                            
+
                         </h1>
                         <h2 class="text-purple">UI/UX Designer</h2>
                         <div class="d-flex mt-3">
@@ -67,20 +82,20 @@
                                 </a>
                             </div>
 
-                            <div class="phoneNo d-flex ms-4">
+                            <div class="phoneNo d-flex ms-2 ms-md-4">
                                 <div class="icon">
                                     <i class="fas fa-phone-alt shadow"></i>
                                 </div>
-                                <div class="box-body ms-3">
+                                <div class="box-body ms-1 ms-md-3">
                                     <small class="fw-bold">
                                         FOR FURTHER INQUIRY
                                     </small>
-                                    <p class="mb-0 fw-600 text-purple">(+91)-87-550799-67</p>
+                                    <p class="mb-0 fw-600 text-purple">(+91)-8755079967</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <img src="images/home-right.png" alt="banner-img" class="w-100">
                     </div>
                 </div>
@@ -90,7 +105,7 @@
             <div class="container py-4">
 
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-md-5 text-center">
                         <img src="images/my-pic.jpg" class="w-75 p-md-5 rounded-circle">
                     </div>
                     <div class="col-md-7">
@@ -102,7 +117,7 @@
                         <h4 class="fw-500 text-warning mt-2 h5 lh-35">
                             I am Yudhveer Saini
                             <br>
-                            Full Stack Web Developer
+                            UI/UX Designer
                             <br>
                             I live in Saharanpur, Uttar Pradesh, India
                         </h4>
@@ -119,10 +134,10 @@
         </section>
 
         <section id="Skills" class="">
-            <div class="container pt-4">
+            <div class="container pt-md-4">
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="d-flex mb-4">
+                    <div class="col-md-7 col-lg-6">
+                        <div class="d-flex mb-4 skills-flex">
                             <h3 class="bg-purple text-white h6 rounded shadow px-3 py-1">
                                 Skills
                             </h3>
@@ -166,7 +181,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 align-self-center">
+                    <div class="col-md-5 col-lg-6 align-self-center">
                         <div class="client-info w-50 mx-auto">
                             <div class="d-flex mb-5">
                                 <span class="lage text-warning">6</span>
@@ -232,21 +247,21 @@
 
                 <div class="row mt-5 g-3">
 
-                    <div class="col-md-4 position-relative">
+                    <div class="col-6 col-md-4 position-relative">
                         <a href="https://hhh.sitemoviepro.com/" target="_blank">
                             <div class="thumbnail">
                                 <img src="images/1.jpg" alt="Demo Images">
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4 position-relative">
+                    <div class="col-6 col-md-4 position-relative">
                         <a href="https://drama.primetube.live/" target="_blank">
                             <div class="thumbnail">
                                 <img src="images/2.jpg" alt="Demo Images">
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4 position-relative">
+                    <div class="col-6 col-md-4 position-relative">
                         <a href="https://biointelligentwellness.com/" target="_blank">
                             <div class="thumbnail">
                                 <img src="images/3.jpg" alt="Demo Images">
@@ -254,35 +269,35 @@
                         </a>
                     </div>
 
-                    <div class="col-md-4 position-relative">
+                    <div class="col-6 col-md-4 position-relative">
                         <a href="http://dev.alchotech.com/mobileapp/" target="_blank">
                             <div class="thumbnail">
                                 <img src="images/4.jpg" alt="Demo Images">
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4 position-relative">
+                    <div class="col-6 col-md-4 position-relative">
                         <a href="https://fertile.com/" target="_blank">
                             <div class="thumbnail">
                                 <img src="images/5.jpg" alt="Demo Images">
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4 position-relative">
+                    <div class="col-6 col-md-4 position-relative">
                         <a href="https://aistoremaker.com/" target="_blank">
                             <div class="thumbnail">
                                 <img src="images/6.jpg" alt="Demo Images">
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4 position-relative">
+                    <div class="col-6 col-md-4 position-relative">
                         <a href="https://getaistoremaker.com/fe/" target="_blank">
                             <div class="thumbnail">
                                 <img src="images/9.jpg" alt="Demo Images">
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-4 position-relative">
+                    <div class="col-6 col-md-4 position-relative">
                         <a href="https://fairplay99.com/home" target="_blank">
                             <div class="thumbnail">
                                 <img src="images/8.jpg" alt="Demo Images">
@@ -387,61 +402,74 @@
     </footer>
 
 
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
-      <script id="rendered-js" >
-$(function () {
-  $(".typed").typed({
-    strings: [" Yudhveer Saini"],
-    // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
-    stringsElement: null,
-    // typing speed
-    typeSpeed: 30,
-    // time before typing starts
-    startDelay: 1200,
-    // backspacing speed
-    backSpeed: 20,
-    // time before backspacing
-    backDelay: 500,
-    // loop
-    loop: true,
-    // false = infinite
-    loopCount: 5,
-    // show cursor
-    showCursor: false,
-    // character for cursor
-    cursorChar: "|",
-    // attribute to type (null == text)
-    attr: null,
-    // either html or text
-    contentType: 'html',
-    // call when done callback function
-    callback: function () {},
-    // starting callback function before each string
-    preStringTyped: function () {},
-    //callback for every typed string
-    onStringTyped: function () {},
-    // callback for reset
-    resetCallback: function () {} });
+    <script id="rendered-js">
+        $(function () {
+            $(".typed").typed({
+                strings: [" Yudhveer Saini"],
+                // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+                stringsElement: null,
+                // typing speed
+                typeSpeed: 30,
+                // time before typing starts
+                startDelay: 1200,
+                // backspacing speed
+                backSpeed: 20,
+                // time before backspacing
+                backDelay: 500,
+                // loop
+                loop: true,
+                // false = infinite
+                loopCount: 5,
+                // show cursor
+                showCursor: false,
+                // character for cursor
+                cursorChar: "|",
+                // attribute to type (null == text)
+                attr: null,
+                // either html or text
+                contentType: 'html',
+                // call when done callback function
+                callback: function () { },
+                // starting callback function before each string
+                preStringTyped: function () { },
+                //callback for every typed string
+                onStringTyped: function () { },
+                // callback for reset
+                resetCallback: function () { }
+            });
 
-});
-//# sourceURL=pen.js
+        });
+        //# sourceURL=pen.js
     </script>
     <script id="rendered-js">
         $(window).scroll(function () {
             if ($(window).scrollTop() >= 50) {
-                $('nav').addClass('fixed-header');
+                $('.desktop-nav').addClass('fixed-header');
                 // $('nav div').addClass('visible-title');
             } else {
-                $('nav').removeClass('fixed-header');
+                $('.desktop-nav').removeClass('fixed-header');
                 // $('nav div').removeClass('visible-title');
             }
         });
 
 
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 50) {
+                $('.mobile-nav').addClass('m-fixed-header');
+                // $('nav div').addClass('visible-title');
+            } else {
+                $('.mobile-nav').removeClass('m-fixed-header');
+                // $('nav div').removeClass('visible-title');
+            }
+        });
     </script>
 
-  </body>
+</body>
+
 </html>

@@ -45,7 +45,7 @@ nav {
 .fixed-h {
   display: none;
 }
-.fixed-header{
+.fixed-header {
   position: fixed;
   top: 0;
   left: 0;
@@ -84,7 +84,6 @@ nav {
 #About {
   background: url(../images/rectangle_1.png) no-repeat center 0;
   background-position: center bottom;
-  background-size: cover;
   background-size: cover;
   padding: 4rem 0rem 11rem;
 }
@@ -185,4 +184,114 @@ i.fas.fa-phone-alt {
 .card-skills:hover {
   transition: 0.5s ease-in-out;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+.mobile-footer-menu {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+}
+.mobile-footer-menu .navbar {
+  background-color: var(--purple);
+  box-shadow: 0 -0.5rem 1rem rgb(9 9 9 / 81%) !important;
+}
+.mobile-footer-menu .navbar .nav-pills .nav-link {
+  background: 0 0;
+  border: 0;
+  border-radius: var(--bs-nav-pills-border-radius);
+  padding: 16px 8.2px;
+  color: #fff !important;
+}
+@media (max-width: 1199.9px) {
+  .w-50 {
+    width: 75% !important;
+  }
+}
+@media (max-width: 991.9px) {
+  .w-50 {
+    width: 100% !important;
+  }
+  .nav-pills .nav-link {
+    padding: 7px 10px;
+  }
+  #Skills h4.h5 {
+    font-size: 17px;
+  }
+  .client-info {
+    padding: 25px 12px;
+  }
+}
+@media (max-width: 767.9px) {
+  .logo-w {
+    width: 150px;
+  }
+  .client-info {
+    padding: 25px 30px;
+  }
+  #About {
+    padding: 2rem 0rem 6rem;
+  }
+  #Skills {
+    padding-bottom: 3rem;
+  }
+  #Skills .skills-flex {
+    justify-content: center;
+  }
+  #Projects {
+    background-size: contain;
+    padding: 5rem 0rem 1rem;
+  }
+  .thumbnail {
+    background: #cccccc;
+    height: 250px;
+    border: 0px solid #706b6b;
+    padding: 4px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  }
+  .m-fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--purple);
+    transition: 0.5s ease-in-out;
+    z-index: 99;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 62%) !important;
+  }
+  .m-fixed-header .normal-h {
+    display: none;
+  }
+  .m-fixed-header .fixed-h {
+    display: block;
+  }
+  .m-fixed-header .btn-purple {
+    background-color: var(--white);
+    color: var(--purple);
+  }
+  .fixed-header {
+    position: fixed;
+    top: unset;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white);
+    transition: 0.5s ease-in-out;
+    z-index: 99;
+    box-shadow: 0 -0.5rem 1rem rgb(0 0 0 / 62%) !important;
+  }
+  .desktop-nav {
+    padding: 0px;
+  }
+  .desktop-nav .nav-pills .nav-link {
+    padding: 13px 8px;
+    border-radius: 0px;
+  }
+  .fixed-header .nav-pills .nav-link {
+    color: #000;
+  }
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    background-color: var(--purple);
+    color: #fff;
+  }
 }
